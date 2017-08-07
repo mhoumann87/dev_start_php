@@ -1,0 +1,27 @@
+{
+  "name": "starter_files_php",
+  "version": "1.0.0",
+  "description": "Starter files for a project with PHP, PostCSS, CSSNext, Gulp, Browserify and Coffeescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhoumann87/dev_start_php.git"
+  },
+  "keywords": [
+    "PHP",
+    "PosstCSS",
+    "CSSNext",
+    "Browserify",
+    "Gulp",
+    "Coffeescript"
+  ],
+  "author": "Michael Houmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhoumann87/dev_start_php/issues"
+  },
+  "homepage": "https://github.com/mhoumann87/dev_start_php#readme"
+}
