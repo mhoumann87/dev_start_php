@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/mhoumann87/dev_start_php/issues"
   },
-  "homepage": "https://github.com/mhoumann87/dev_start_php#readme"
+  "homepage": "https://github.com/mhoumann87/dev_start_php#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  }
 }
