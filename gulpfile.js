@@ -9,15 +9,19 @@ const   gulp = require('gulp'),
         source = 'builds/development/',
         dest = 'builds/production/assets/';
 
-        gulp.task('php', function() {
-        	gulp.src('builds/production/*.php');
-        });
-
         gulp.task('css', function() {
-        	gulp.src('source' + 'css/style.css')
+			gulp.src(source + 'css/style.css')
 				.pipe(sourcemaps.init())
 				.pipe(postcss([
-					require('postcss-partial-import')
+					require('postcss-partial-import')({prefix: '_', extension: '.css'}),
+					cssnext()
 				]))
+				.on('error', gutil.log)
+				.pipe(sourcemaps.write('.'))
+				.pipe(gulp.dest(dest + 'css'));
+		});
 
-        })
+        gulp.task('watch', function() {
+			gulp.watch(source + 'css/**/*.css', ['css']);
+			gulp.watch(dest + '**/*.php', ['php']);
+        });
