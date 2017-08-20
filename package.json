@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/mhoumann87/dev_start_php#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-connect-php": "^1.0.1",
     "gulp-postcss": "^7.0.0",
